@@ -32,12 +32,12 @@ function FrequencyTable() {
         className="border-b border-gray-600 hover:bg-gray-700"
       >
         <td className="p-3">
-          <button className="bg-blue-500 text-white px-5 py-2 rounded-md text-sm hover:bg-blue-400">
+          <button  style ={{backgroundColor:"#38BDF8"}}className="bg-blue-500 text-white px-5 py-2 rounded-md text-sm hover:bg-blue-400">
             Recommend
           </button>
         </td>
         <td className="p-3">
-          <input type="checkbox" className="w-4 h-4" />
+          <input style={{backgroundColor:"black"}} type="checkbox" className="w-4 h-4" />
         </td>
         <td className="p-3">{row.wellName}</td>
         <td className="p-3">In Range</td>
@@ -49,9 +49,10 @@ function FrequencyTable() {
         <td className="p-3 bg-orange-300 text-gray-900">{row.incChange}</td>
         <td className="p-3 flex items-center">
           <span className="mr-2 text-gray-300">{row.runLifeDays}</span>
-          <button className="bg-blue-500 text-white px-4 py-1 border border-blue-500 rounded-md text-sm hover:bg-blue-400">
-            Running
-          </button>
+          <button class="bg-transparent text-teal-400 border border-teal-400 rounded px-4 py-1 hover:bg-teal-800 hover:text-white transition">
+    Running
+  </button>
+
         </td>
         <td className="p-3">Fixed speed (1)</td>
         <td className="p-3">{row.motorLoad}</td>
