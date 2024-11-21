@@ -37,7 +37,7 @@ function FrequencyTable() {
           </button>
         </td>
         <td className="p-3">
-          <input style={{backgroundColor:"black"}} type="checkbox" className="w-4 h-4" />
+          <input style={{backgroundColor:"red"}} type="checkbox" className="w-4 h-4" />
         </td>
         <td className="p-3">{row.wellName}</td>
         <td className="p-3">In Range</td>
@@ -81,7 +81,7 @@ function FrequencyTable() {
           <input
             type="text"
             placeholder="Search"
-            className="w-full text-sm text-gray-300 bg-black focus:outline-none"
+            className="w-10000px text-sm text-gray-300 bg-black focus:outline-none"
           />
         </div>
       </div>
