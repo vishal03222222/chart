@@ -125,7 +125,7 @@ function FrequencyTable() {
       <div className="mt-6 flex justify-between items-center">
         <button
           onClick={() => handlePageChange(currentPage - 1)}
-          className={`px-4 py-2 bg-blue-500 text-white rounded-md text-sm ${
+          className={`px-4 py-2 bg-gray-700 text-gray-500 text-white rounded-md text-sm ${
             currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={currentPage === 1}
@@ -149,7 +149,7 @@ function FrequencyTable() {
         </div>
         <button
           onClick={() => handlePageChange(currentPage + 1)}
-          className={`px-4 py-2 bg-blue-500 text-white rounded-md text-sm ${
+          className={`px-4 py-2 bg-gray-700 text-gray-500 text-white rounded-md text-sm ${
             currentPage === 10 ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={currentPage === 10}

@@ -99,9 +99,12 @@ const RecommendationChart = () => {
           marginBottom: "10px",
         }}
       >
-        <p style={{ color: "#9E9E9E", fontSize: "14px", margin: 0 }}>
+        <u style={{color:"orange", }}>
+        <p style={{ color: "lightblue",marginBottom:"10px", fontSize: "14px", margin: 0,width:"200px" }}>
           Optimization opportunities
         </p>
+        </u><span style={{color:"white",marginRight:"1100px"}}> Pwf/Hz</span>
+        
         <div style={{ position: "relative", width: "200px" }}>
           <input
             type="text"

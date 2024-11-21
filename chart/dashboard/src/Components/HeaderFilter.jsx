@@ -125,7 +125,7 @@ const HeaderFilter = () => {
               border: "none",
               cursor: "pointer",
               fontWeight: "bold",
-              flex: 1,
+             
             }}
           >
             My wells
