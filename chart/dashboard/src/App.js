@@ -7,6 +7,7 @@ import HeaderBar from "./Components/HeaderBar";
 import HeaderFilter from "./Components/HeaderFilter";
 import RecommendationChart from "./Components/RecommendationChart";
 import TrackedFrequency from "./Components/TrackedFrequency";
+import Locationpage from "./Locationpage/Lpage";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         <RecommendationChart />
         <FrequencyTable />
         <TrackedFrequency />
+
       </div>
+      <Locationpage/>
     </div>
   );
 }
