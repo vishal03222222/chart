@@ -5,6 +5,17 @@ const TrackedFrequency = () => {
   const rowsPerPage = 11; // Number of rows per page
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const newdata = [
+    { motorLoad: 59, driveLoad: "-", mtT: 175.0, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: 52, driveLoad: "-", mtT: 174.0, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 175.8, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 190.8, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 171.5, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 202.6, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 178.4, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 171.5, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+  ];
+
 
   // Sample Data (repeat or adjust as needed for testing)
   const data = Array.from({ length: 230 }, (_, i) => ({

@@ -56,6 +56,11 @@ function FrequencyTable() {
         </td>
         <td className="p-3">Fixed speed (1)</td>
         <td className="p-3">{row.motorLoad}</td>
+        <td className="p-3">-</td>
+        <td className="p-3">1572</td>
+        <td className="p-3">Pump 1:stork/400/PEDER/stages <br />
+        Motor Amp:84</td>
+        <td className="p-3">+</td>
       </tr>
     ));
   };
@@ -87,7 +92,7 @@ function FrequencyTable() {
       </div>
 
       {/* Table */}
-      <table className="w-full border-collapse table-auto bg-gray-800 rounded-lg overflow-hidden shadow-lg text-sm">
+      <table className=" border-collapse table-auto bg-gray-800 rounded-lg overflow-hidden shadow-lg text-sm">
         <thead>
           <tr className="bg-gray-700 text-left border-b border-gray-600">
             <th className="p-3 font-medium text-gray-300">Task</th>
@@ -116,7 +121,10 @@ function FrequencyTable() {
             <th className="p-3 font-medium text-gray-300">
               PID Control Mode
             </th>
-            <th className="p-3 font-medium text-gray-300">Motor Load</th>
+            <th className="p-3 font-medium text-gray-300">Motor Load %</th>
+            <th className="p-3 font-medium text-gray-300-">Drive Load %</th>
+            <th className="p-3 font-medium text-gray-300">Mt T (degF)</th>
+            <th className="p-3 font-medium text-gray-300">Equipment</th>
           </tr>
         </thead>
         <tbody>{renderRows()}</tbody>
