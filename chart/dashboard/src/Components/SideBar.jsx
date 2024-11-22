@@ -33,7 +33,8 @@ const SideBar = () => {
             <FaBell className="text-white text-xl" />
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
-            <FaClock className="text-white text-xl" />
+            
+          <Link to={'/clock'}><FaClock className="text-white text-xl" /></Link>
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
             

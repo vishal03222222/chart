@@ -9,6 +9,7 @@ import RecommendationChart from "./Components/RecommendationChart";
 import TrackedFrequency from "./Components/TrackedFrequency";
 import Locationpage from "./Locationpage/Lpage";
 import { Routes, Route } from 'react-router-dom'
+import Clockpage from "./clockpage/Cpage";
 function App() {
   return (
     <div className="flex h-screen bg-gray-900">
@@ -19,7 +20,10 @@ function App() {
       {/* Main Content Section */}
       <div className="w-[95%] h-screen overflow-y-auto">
       <Routes>
+      <Route path='/' element={<Clockpage />} />
         <Route path='/Maps' element={<Locationpage />} />
+        <Route path='/clock' element={<Clockpage />} />
+
       </Routes>
      
         <HeaderBar />
