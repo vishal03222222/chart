@@ -8,14 +8,20 @@ import HeaderFilter from "./Components/HeaderFilter";
 import RecommendationChart from "./Components/RecommendationChart";
 import TrackedFrequency from "./Components/TrackedFrequency";
 import Locationpage from "./Locationpage/Lpage";
-
+import { Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className="flex h-screen bg-gray-900">
-      <SideBar />
+    
+
+    <SideBar />
 
       {/* Main Content Section */}
       <div className="w-[95%] h-screen overflow-y-auto">
+      <Routes>
+        <Route path='/Maps' element={<Locationpage />} />
+      </Routes>
+     
         <HeaderBar />
         <HeaderFilter />
         <RecommendationChart />
@@ -23,8 +29,12 @@ function App() {
         <TrackedFrequency />
 
       </div>
-      <Locationpage/>
+
+
+
+
     </div>
+    
   );
 }
 

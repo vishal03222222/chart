@@ -6,8 +6,9 @@ import {
   FaClock,
   FaCog,
   FaSignOutAlt,
+  FaLocationArrow
 } from "react-icons/fa";
-
+import {Link} from 'react-router-dom'
 const SideBar = () => {
   return (
     <div className="h-screen w-[5%] bg-gray-900 flex flex-col justify-between items-center py-4 sticky top-0">
@@ -35,7 +36,8 @@ const SideBar = () => {
             <FaClock className="text-white text-xl" />
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
-            <FaCog className="text-white text-xl" />
+            
+            <Link to={'/Maps'} ><FaLocationArrow className="text-white text-xl" /></Link>
           </button>
         </div>
       </div>
