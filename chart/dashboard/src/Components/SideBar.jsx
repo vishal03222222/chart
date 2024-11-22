@@ -24,7 +24,8 @@ const SideBar = () => {
         {/* Icons */}
         <div className="space-y-6">
           <button className="w-12 h-12 flex items-center justify-center bg-gray-700 rounded-md hover:bg-gray-600">
-            <FaHome className="text-white text-xl" />
+            
+            <Link to={'/'}><FaHome className="text-white text-xl" /></Link>
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
             <FaProjectDiagram className="text-white text-xl" />

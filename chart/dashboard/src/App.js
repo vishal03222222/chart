@@ -13,19 +13,19 @@ import Clockpage from "./clockpage/Cpage";
 function App() {
   return (
     <div className="flex h-screen bg-gray-900">
-    
 
-    <SideBar />
+
+      <SideBar />
 
       {/* Main Content Section */}
       <div className="w-[95%] h-screen overflow-y-auto">
-      <Routes>
-      <Route path='/' element={<Clockpage />} />
-        <Route path='/Maps' element={<Locationpage />} />
-        <Route path='/clock' element={<Clockpage />} />
+        <Routes>
+          <Route path='/' />
+          <Route path='/Maps' element={<Locationpage />} />
+          <Route path='/clock' element={<Clockpage />} />
 
-      </Routes>
-     
+        </Routes>
+
         <HeaderBar />
         <HeaderFilter />
         <RecommendationChart />
@@ -38,7 +38,7 @@ function App() {
 
 
     </div>
-    
+
   );
 }
 
