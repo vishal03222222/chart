@@ -132,6 +132,7 @@ const Clockpage = () => {
         </div>
       </div>
     </div>
+    {table}
     <div className="dashboard">
       <header>
         <h1>Shutdown Wells</h1>
