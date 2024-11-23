@@ -15,7 +15,7 @@ const Clockpage = () => {
     { healthScore: 0, name: 'GUARDIAN Z50 6 7WA', operator: 'Roxxon', uptime: 50, change: '-20%' },
     { healthScore: 0, name: 'GUARDIAN Z50 6 7MS', operator: 'Roxxon', uptime: 60, change: '-25%' },
   ];
-  const renderChart = () => {
+  
     const data = {
       labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'],
       datasets: [
@@ -27,25 +27,12 @@ const Clockpage = () => {
           tension: 0.3,
         },
       ],
-    };
+    }
+    
     const options = { responsive: true, maintainAspectRatio: false };
     return <Line data={data} options={options} />;
-  };
-  const data = {
-    labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'],
-    datasets: [
-      {
-        label: 'Production',
-        data: [100, 90, 85, 80, 75, 70, 65],
-        borderColor: '#007bff',
-        backgroundColor: 'rgba(0, 123, 255, 0.1)',
-        tension: 0.3,
-      },
-    ],
-  };
-  const options = { responsive: true, maintainAspectRatio: false };
-  return <Line data={data} options={options} />;
-
+  
+  
 
   return (
     <div>
@@ -132,7 +119,7 @@ const Clockpage = () => {
         </div>
       </div>
     </div>
-    {table}
+    {/* {table} */}
     <div className="dashboard">
       <header>
         <h1>Shutdown Wells</h1>
@@ -161,7 +148,7 @@ const Clockpage = () => {
                   <div style={{ width: `${well.uptime}%` }} className="uptime-fill" />
                 </div>
               </td>
-              <td style={{ width: '200px' }}>{renderChart()}</td>
+              <td style={{ width: '200px' }}>{data}</td>
               <td>
                 <span className={`change ${parseInt(well.change) < 0 ? 'negative' : 'positive'}`}>
                   {well.change}
