@@ -1,7 +1,52 @@
 import React from "react";
 import { FaSync } from "react-icons/fa";
+import { Line } from 'react-chartjs-2';
+import './cpage.css'
 
 const Clockpage = () => {
+  const wells = [
+    { healthScore: 0, name: 'GLACIER ROCK 15', operator: 'Roxxon', uptime: 30, change: '-20%' },
+    { healthScore: 0, name: 'WENDIGO EAST D 706WA', operator: 'Roxxon', uptime: 40, change: '-10%' },
+    { healthScore: 0, name: 'CREED HA 7 7JJM', operator: 'Roxxon', uptime: 35, change: '-15%' },
+    { healthScore: 0, name: 'BLOCK HA 7 704LS', operator: 'Roxxon', uptime: 25, change: '-25%' },
+    { healthScore: 0, name: 'SMYRNA WEST D 3440WB', operator: 'Hammer', uptime: 45, change: '-35%' },
+    { healthScore: 0, name: 'HAMILTON COTT (A9) 1LB', operator: 'A.I.M', uptime: 50, change: '-30%' },
+    { healthScore: 0, name: 'GRIDIRON N004WA', operator: 'A.I.M', uptime: 55, change: '-40%' },
+    { healthScore: 0, name: 'GUARDIAN Z50 6 7WA', operator: 'Roxxon', uptime: 50, change: '-20%' },
+    { healthScore: 0, name: 'GUARDIAN Z50 6 7MS', operator: 'Roxxon', uptime: 60, change: '-25%' },
+  ];
+  const renderChart = () => {
+    const data = {
+      labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'],
+      datasets: [
+        {
+          label: 'Production',
+          data: [100, 90, 85, 80, 75, 70, 65],
+          borderColor: '#007bff',
+          backgroundColor: 'rgba(0, 123, 255, 0.1)',
+          tension: 0.3,
+        },
+      ],
+    };
+    const options = { responsive: true, maintainAspectRatio: false };
+    return <Line data={data} options={options} />;
+  };
+  const data = {
+    labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'],
+    datasets: [
+      {
+        label: 'Production',
+        data: [100, 90, 85, 80, 75, 70, 65],
+        borderColor: '#007bff',
+        backgroundColor: 'rgba(0, 123, 255, 0.1)',
+        tension: 0.3,
+      },
+    ],
+  };
+  const options = { responsive: true, maintainAspectRatio: false };
+  return <Line data={data} options={options} />;
+
+
   return (
     <div>
     <div className="bg-gray-900 text-white px-4 py-3">
@@ -87,7 +132,47 @@ const Clockpage = () => {
         </div>
       </div>
     </div>
+    <div className="dashboard">
+      <header>
+        <h1>Shutdown Wells</h1>
+        <input type="text" placeholder="Search by well name or operator" />
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <th>Health Score</th>
+            <th>Well Name</th>
+            <th>Operator</th>
+            <th>Uptime</th>
+            <th>Production</th>
+            <th>7 Day Change</th>
+          </tr>
+        </thead>
+        <tbody>
+          {wells.map((well, index) => (
+            <tr key={index}>
+              <td>{well.healthScore}</td>
+              <td>{well.name}</td>
+              <td>{well.operator}</td>
+              <td>
+                {well.uptime}%
+                <div className="uptime-bar">
+                  <div style={{ width: `${well.uptime}%` }} className="uptime-fill" />
+                </div>
+              </td>
+              <td style={{ width: '200px' }}>{renderChart()}</td>
+              <td>
+                <span className={`change ${parseInt(well.change) < 0 ? 'negative' : 'positive'}`}>
+                  {well.change}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
+    </div>
+    
     
   );
 };
