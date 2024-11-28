@@ -1,0 +1,65 @@
+/* Card Container */
+.schedule-card {
+    background-color: #1e293b;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Header */
+  .schedule-header {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Table Header */
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+  
+  /* Table Row */
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #334155;
+  }
+  
+  .table-row:last-child {
+    border-bottom: none;
+  }
+  
+  /* Columns */
+  .column {
+    flex: 1;
+  }
+  
+  .column.well-name {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .column.date {
+    text-align: center;
+  }
+  
+  .column.job-type {
+    text-align: right;
+    color: #3b82f6;
+  }
+  
+  /* Hover Effects */
+  .table-row:hover {
+    background-color: #334155;
+    cursor: pointer;
+  }
+  

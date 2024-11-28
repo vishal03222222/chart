@@ -1,6 +1,7 @@
 import React from "react";
 import "./Logostyle.css";
 import "./summarycard.css"
+import "./ScheduleTable.css"
 
 
 const Logopage = () => {
@@ -40,7 +41,7 @@ const Logopage = () => {
                 </div>
                 <button className="add-btn">+</button>
             </div>
-            <div>
+        <div>
                 {/* first portion */}
                 <div>
                     <div className="card">
