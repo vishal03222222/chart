@@ -4,14 +4,24 @@ import "./summarycard.css"
 
 
 const Logopage = () => {
-    const SummaryCard = () => {
-        const issue = [
-            { type: "Gas interference", count: 4, color: "red" },
-            { type: "Possible hole in tubing", count: 3, color: "red" },
-            { type: "Worn out pump", count: 5, color: "red" },
-            { type: "Possible broken shaft", count: 0, color: "green" },
-        ];
-    }
+
+    const issues = [
+        { type: "Gas interference", count: 4, color: "red" },
+        { type: "Possible hole in tubing", count: 3, color: "red" },
+        { type: "Worn out pump", count: 5, color: "red" },
+        { type: "Possible broken shaft", count: 0, color: "green" },
+    ];
+    const scheduleData = [
+        { wellName: "GLACIER ROCK 15", date: "04-Aug-2024", jobType: "Install-New" },
+        { wellName: "TITAN RIDGE 4", date: "22-Aug-2024", jobType: "Pul-EOT" },
+        { wellName: "HORIZON ECHO 7", date: "19-Sept-2024", jobType: "DFA" },
+        { wellName: "SUMMIT PEAK 11", date: "13-Oct-2024", jobType: "Service" },
+        { wellName: "ATLAS VALLEY 6", date: "28-Oct-2024", jobType: "Pul-EOT" },
+        { wellName: "ORION FIELD 9", date: "09-Sept-2024", jobType: "Pul-EOT" },
+        { wellName: "FRONTIER BASIN 5", date: "26-Oct-2024", jobType: "Install-New" },
+    ];
+
+
     return (
         <header className="header">
             <div className="logo">Connexia</div>
@@ -57,7 +67,23 @@ const Logopage = () => {
                         <button className="view-all-btn">View all</button>
                     </div>
 
-                    <div></div>
+                    <div className="schedule-card">
+                        <div className="schedule-header">Schedule</div>
+                        <div className="schedule-table">
+                            <div className="table-header">
+                                <div className="column well-name">Well name</div>
+                                <div className="column date">Date</div>
+                                <div className="column job-type">Job Type</div>
+                            </div>
+                            {scheduleData.map((row, index) => (
+                                <div className="table-row" key={index}>
+                                    <div className="column well-name">{row.wellName}</div>
+                                    <div className="column date">{row.date}</div>
+                                    <div className="column job-type">{row.jobType}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
                 {/* middleportion */}
                 <div>
