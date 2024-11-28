@@ -1,0 +1,89 @@
+/* Card Container */
+.card {
+    background-color: #1e293b;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Header */
+  .card-header {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Issue Row */
+  .issue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #334155;
+  }
+  
+  .issue:last-child {
+    border-bottom: none;
+  }
+  
+  /* Icons */
+  .issue-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .arrow-icon {
+    font-size: 1.2rem;
+    color: #94a3b8;
+  }
+  
+  /* Issue Details */
+  .issue-details {
+    flex-grow: 1;
+    margin-left: 0.5rem;
+  }
+  
+  .issue-type {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .issue-count {
+    font-size: 0.8rem;
+    color: #94a3b8;
+  }
+  
+  /* View All Button */
+  .view-all-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Menu Icon */
+  .menu-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #94a3b8;
+  }
+  
