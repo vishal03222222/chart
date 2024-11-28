@@ -17,7 +17,9 @@ const SideBar = () => {
         {/* Logo */}
         
         
-        <div style={{marginLeft:"13px"}} className="text-orange-500 text-4xl ml-13px font-bold">X</div>
+        <div style={{marginLeft:"13px"}} className="text-orange-500 text-4xl ml-13px font-bold">
+        <Link to={'/logopage'}>X</Link>
+        </div>
 
 
       

@@ -10,6 +10,7 @@ import TrackedFrequency from "./Components/TrackedFrequency";
 import Locationpage from "./Locationpage/Lpage";
 import { Routes, Route } from 'react-router-dom'
 import Clockpage from "./clockpage/Cpage";
+import Logopage from "./Xpage/Logopage";
 function App() {
   return (
     <div className="flex h-screen bg-gray-900">
@@ -23,6 +24,7 @@ function App() {
           <Route path='/' />
           <Route path='/Maps' element={<Locationpage />} />
           <Route path='/clock' element={<Clockpage />} />
+          <Route path='/logopage' element={<Logopage />} />
 
         </Routes>
 
