@@ -4,6 +4,7 @@ import "./summarycard.css"
 import "./ScheduleTable.css"
 import "./DeferredProduction.css"
 import "./ProductionOptimization.css"
+import "./SustainableProduction.css"
 
 
 const Logopage = () => {
