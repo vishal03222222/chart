@@ -141,54 +141,54 @@ const Logopage = () => {
                     </div>
                     <br /> <br />
                     <div className="sustainable-production">
-      <div className="header">
-        <h3>Sustainable production</h3>
-        <div className="metrics">
-          <div className="metric">
-            <span>Oil</span>
-            <span>43,000 bbl/day</span>
-          </div>
-          <div className="metric">
-            <span>Gas</span>
-            <span>3,000 mcf/day</span>
-          </div>
-          <div className="metric">
-            <span>CO₂</span>
-            <span>3,100 kg/day</span>
-          </div>
-        </div>
-      </div>
-      <div className="content">
-        <div className="chart-section">
-          <div className="chart">
-            <div className="chart-grid">
-              <div className="chart-line oil"></div>
-              <div className="chart-line gas"></div>
-              <div className="chart-line co2"></div>
-            </div>
-          </div>
-        </div>
-        <div className="data-section">
-          <div className="data-item">
-            <h5>Emission events</h5>
-            <p className="value">
-              <span className="alert-icon">⚠️</span> 9
-            </p>
-            <p className="detail">Active emission events</p>
-          </div>
-          <div className="data-item">
-            <h5>Asset alerts</h5>
-            <p className="value">
-              <span className="alert-icon">⚠️</span> 11
-            </p>
-            <p className="detail">Active alerts</p>
-          </div>
-        </div>
-      </div>
-      <div className="footer">
-        <button className="view-alarms-btn">View all emission alarms</button>
-      </div>
-    </div>
+                        <div className="header">
+                            <h3>Sustainable production</h3>
+                            <div className="metrics">
+                                <div className="metric">
+                                    <span>Oil</span>
+                                    <span>43,000 bbl/day</span>
+                                </div>
+                                <div className="metric">
+                                    <span>Gas</span>
+                                    <span>3,000 mcf/day</span>
+                                </div>
+                                <div className="metric">
+                                    <span>CO₂</span>
+                                    <span>3,100 kg/day</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="content">
+                            <div className="chart-section">
+                                <div className="chart">
+                                    <div className="chart-grid">
+                                        <div className="chart-line oil"></div>
+                                        <div className="chart-line gas"></div>
+                                        <div className="chart-line co2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="data-section">
+                                <div className="data-item">
+                                    <h5>Emission events</h5>
+                                    <p className="value">
+                                        <span className="alert-icon">⚠️</span> 9
+                                    </p>
+                                    <p className="detail">Active emission events</p>
+                                </div>
+                                <div className="data-item">
+                                    <h5>Asset alerts</h5>
+                                    <p className="value">
+                                        <span className="alert-icon">⚠️</span> 11
+                                    </p>
+                                    <p className="detail">Active alerts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="footer">
+                            <button className="view-alarms-btn">View all emission alarms</button>
+                        </div>
+                    </div>
                 </div>
                 {/* lastportion */}
                 <div>
