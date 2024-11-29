@@ -1,0 +1,143 @@
+.production-optimization {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2d;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 450px;
+  }
+  
+  .header h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .chart-section {
+    width: 60%;
+  }
+  
+  .chart h4 {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .chart {
+    background-color: #2a2a3b;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .chart-grid {
+    position: relative;
+    height: 120px;
+    border-left: 2px solid #444;
+    border-bottom: 2px solid #444;
+  }
+  
+  .chart-line {
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+  }
+  
+  .chart-line.potential {
+    background-color: #3adb76;
+    width: 100%;
+    top: 40px;
+  }
+  
+  .chart-line.current {
+    background-color: #1f77b4;
+    width: 80%;
+    top: 80px;
+  }
+  
+  .chart-legend {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-color {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    border-radius: 50%;
+  }
+  
+  .potential-color {
+    background-color: #3adb76;
+  }
+  
+  .current-color {
+    background-color: #1f77b4;
+  }
+  
+  .data-section {
+    width: 35%;
+  }
+  
+  .data-item {
+    margin-bottom: 20px;
+  }
+  
+  .data-item h5 {
+    margin: 0 0 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .value {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .value span {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #a0a0a0;
+  }
+  
+  .detail {
+    font-size: 0.8rem;
+    color: #b0b0b0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .recommendations-btn,
+  .tracked-changes-btn {
+    background-color: #1d72b8;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .recommendations-btn:hover,
+  .tracked-changes-btn:hover {
+    background-color: #155d90;
+  }
+  
