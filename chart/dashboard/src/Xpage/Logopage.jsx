@@ -96,50 +96,99 @@ const Logopage = () => {
                 </div>
                 {/* middleportion */}
                 <div>
-                <div className="production-optimization">
+                    <div className="production-optimization">
+                        <div className="header">
+                            <h3>Production optimization</h3>
+                        </div>
+                        <div className="content">
+                            <div className="chart-section">
+                                <h4>Optimization potential</h4>
+                                <div className="chart">
+                                    {/* Simulating a chart using CSS */}
+                                    <div className="chart-grid">
+                                        <div className="chart-line potential"></div>
+                                        <div className="chart-line current"></div>
+                                    </div>
+                                    <div className="chart-legend">
+                                        <div className="legend-item">
+                                            <span className="legend-color potential-color"></span>
+                                            <span>Potential production rate</span>
+                                        </div>
+                                        <div className="legend-item">
+                                            <span className="legend-color current-color"></span>
+                                            <span>Current production rate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="data-section">
+                                <div className="data-item">
+                                    <h5>Speed change</h5>
+                                    <p className="value">20,859 <span>Bopd Increase</span></p>
+                                    <p className="detail">From 304 wells</p>
+                                </div>
+                                <div className="data-item">
+                                    <h5>Pump change</h5>
+                                    <p className="value">16,978 <span>Bopd Increase</span></p>
+                                    <p className="detail">From 427 wells</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="footer">
+                            <button className="recommendations-btn">View all recommendations</button>
+                            <button className="tracked-changes-btn">View tracked changes</button>
+                        </div>
+                    </div>
+                    <br /> <br />
+                    <div className="sustainable-production">
       <div className="header">
-        <h3>Production optimization</h3>
+        <h3>Sustainable production</h3>
+        <div className="metrics">
+          <div className="metric">
+            <span>Oil</span>
+            <span>43,000 bbl/day</span>
+          </div>
+          <div className="metric">
+            <span>Gas</span>
+            <span>3,000 mcf/day</span>
+          </div>
+          <div className="metric">
+            <span>CO₂</span>
+            <span>3,100 kg/day</span>
+          </div>
+        </div>
       </div>
       <div className="content">
         <div className="chart-section">
-          <h4>Optimization potential</h4>
           <div className="chart">
-            {/* Simulating a chart using CSS */}
             <div className="chart-grid">
-              <div className="chart-line potential"></div>
-              <div className="chart-line current"></div>
-            </div>
-            <div className="chart-legend">
-              <div className="legend-item">
-                <span className="legend-color potential-color"></span>
-                <span>Potential production rate</span>
-              </div>
-              <div className="legend-item">
-                <span className="legend-color current-color"></span>
-                <span>Current production rate</span>
-              </div>
+              <div className="chart-line oil"></div>
+              <div className="chart-line gas"></div>
+              <div className="chart-line co2"></div>
             </div>
           </div>
         </div>
         <div className="data-section">
           <div className="data-item">
-            <h5>Speed change</h5>
-            <p className="value">20,859 <span>Bopd Increase</span></p>
-            <p className="detail">From 304 wells</p>
+            <h5>Emission events</h5>
+            <p className="value">
+              <span className="alert-icon">⚠️</span> 9
+            </p>
+            <p className="detail">Active emission events</p>
           </div>
           <div className="data-item">
-            <h5>Pump change</h5>
-            <p className="value">16,978 <span>Bopd Increase</span></p>
-            <p className="detail">From 427 wells</p>
+            <h5>Asset alerts</h5>
+            <p className="value">
+              <span className="alert-icon">⚠️</span> 11
+            </p>
+            <p className="detail">Active alerts</p>
           </div>
         </div>
       </div>
       <div className="footer">
-        <button className="recommendations-btn">View all recommendations</button>
-        <button className="tracked-changes-btn">View tracked changes</button>
+        <button className="view-alarms-btn">View all emission alarms</button>
       </div>
     </div>
-                    <div></div>
                 </div>
                 {/* lastportion */}
                 <div>
