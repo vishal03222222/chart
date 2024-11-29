@@ -2,6 +2,8 @@ import React from "react";
 import "./Logostyle.css";
 import "./summarycard.css"
 import "./ScheduleTable.css"
+import "./DeferredProduction.css"
+import "./ProductionOptimization.css"
 
 
 const Logopage = () => {
@@ -20,6 +22,12 @@ const Logopage = () => {
         { wellName: "ATLAS VALLEY 6", date: "28-Oct-2024", jobType: "Pul-EOT" },
         { wellName: "ORION FIELD 9", date: "09-Sept-2024", jobType: "Pul-EOT" },
         { wellName: "FRONTIER BASIN 5", date: "26-Oct-2024", jobType: "Install-New" },
+    ];
+
+    const data = [
+        { name: "GLACIER ROCK 15", deferred: 11297, hours: 187 },
+        { name: "TITAN RIDGE 4", deferred: 6200, hours: 124 },
+        { name: "HORIZON ECHO 7", deferred: 800, hours: 12 },
     ];
 
 
@@ -41,7 +49,7 @@ const Logopage = () => {
                 </div>
                 <button className="add-btn">+</button>
             </div>
-        <div>
+            <div style={{ display: "flex" }}>
                 {/* first portion */}
                 <div>
                     <div className="card">
@@ -88,12 +96,84 @@ const Logopage = () => {
                 </div>
                 {/* middleportion */}
                 <div>
-                    <div></div>
+                <div className="production-optimization">
+      <div className="header">
+        <h3>Production optimization</h3>
+      </div>
+      <div className="content">
+        <div className="chart-section">
+          <h4>Optimization potential</h4>
+          <div className="chart">
+            {/* Simulating a chart using CSS */}
+            <div className="chart-grid">
+              <div className="chart-line potential"></div>
+              <div className="chart-line current"></div>
+            </div>
+            <div className="chart-legend">
+              <div className="legend-item">
+                <span className="legend-color potential-color"></span>
+                <span>Potential production rate</span>
+              </div>
+              <div className="legend-item">
+                <span className="legend-color current-color"></span>
+                <span>Current production rate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="data-section">
+          <div className="data-item">
+            <h5>Speed change</h5>
+            <p className="value">20,859 <span>Bopd Increase</span></p>
+            <p className="detail">From 304 wells</p>
+          </div>
+          <div className="data-item">
+            <h5>Pump change</h5>
+            <p className="value">16,978 <span>Bopd Increase</span></p>
+            <p className="detail">From 427 wells</p>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <button className="recommendations-btn">View all recommendations</button>
+        <button className="tracked-changes-btn">View tracked changes</button>
+      </div>
+    </div>
                     <div></div>
                 </div>
                 {/* lastportion */}
                 <div>
-                    <div></div>
+                    <div className="deferred-production">
+                        <div className="header">
+                            <h3>Deferred production</h3>
+                            <p>Cumulative deferred production</p>
+                            <h2>18,297 bbl</h2>
+                        </div>
+                        <div className="top-contributors">
+                            <h4>Top contributors</h4>
+                            {data.map((item, index) => (
+                                <div key={index} className="contributor">
+                                    <div className="info">
+                                        <span className="name">{item.name}</span>
+                                        <span className="deferred">{item.deferred} bbl</span>
+                                    </div>
+                                    <div className="bar">
+                                        <div
+                                            className="progress"
+                                            style={{
+                                                width: `${(item.deferred / 11297) * 100}%`, // Adjust based on max value
+                                            }}
+                                        ></div>
+                                    </div>
+                                    <div className="status">
+                                        <button className="shutdown">Shutdown</button>
+                                        <span>{item.hours} hrs</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <button className="view-all">View all</button>
+                    </div>
                 </div>
             </div>
         </header>
